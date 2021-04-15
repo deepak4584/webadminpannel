@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Search an array for the value "RED", and then replace it with "pink".</p>
+
+<?php
+$arr = array("blue","red","green","yellow");
+print_r(str_replace("red","pink",$arr,$i));
+echo "<br>" . "Replacements: $i";
+?>
+
+</body>
+</html>

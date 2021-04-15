@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Register</h2>
+  <form action="" method="post">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name"  name="name" value="" >
+      </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email"  name="email" value="">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="password"  name="password" value="">
+    </div>
+    <div class="form-group">
+        <label for="mobile">Mobile:</label>
+        <input type="mobile" class="form-control" id="mobile" name="mobile" value="">
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="optradio" checked>Male </label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="optradio">Female</label>
+      </div>
+    <button type="submit"  name="submit" id="submit" class="btn btn-primary">Submit</button>
+    
+  </form>
+
+<br>
+
+  <div class="row">
+      <div class="col-md-3">
+        <button   name="name" id="name" class="btn btn-secondary"  onclick="return showname('name')" >Name</button>
+      </div>
+      <div class="col-md-3">
+        <button   name="email" id="email" class="btn btn-secondary" onclick="return showname('email')">Email</button>
+      </div>
+      <div class="col-md-3">
+        <button   name="password" id="password" class="btn btn-secondary" onclick="return showname('password')">Password</button>
+      </div>
+      <div class="col-md-3">
+        <button   name="mobile" id="mobile" class="btn btn-secondary" onclick="return showname('mobile')">Mobile</button>
+      </div>
+  </div>
+  
+<script> 
+
+function showname(type)
+{
+    
+    if(type =='name')
+    {
+    document.getElementById('name').value = 'Enter your name';
+    }
+    else if(type == 'email')
+    {
+        document.getElementById('email').value = 'Enter your email';
+    }
+    else if(type == 'password')
+    {
+        document.getElementById('password').value = 'Enter your password';
+    }
+    else if(type == 'mobile')
+    {
+        document.getElementById('mobile').value = 'Enter your mobile';
+    }
+    else{
+
+    }
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>
